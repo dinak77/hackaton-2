@@ -1,4 +1,132 @@
 @media (min-width: 320px) and (max-width: 767px) {
+
+    .navigation {
+        padding-bottom: 2%;
+        padding-right: auto;
+        background-color: #5a9449;
+        position: fixed;
+        z-index: 4;
+      }
+    
+      a:hover {
+        color: #e9b537;
+      }
+    
+      #menuToggle {
+        display: block;
+        position: relative;
+        top: 6px;
+        left: auto;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+    
+      #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+      }
+    
+      #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: white;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+      }
+    
+      #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+      }
+    
+      #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+    
+      #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #5a9449;
+      }
+    
+      #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+    
+      #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+      }
+    
+      #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0px 0px -65px;
+        padding: 60px;
+        padding-top: 200px;
+        padding-bottom: 600px;
+        background: white;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+      }
+      #menu li {
+        padding: 10px 0;
+      }
+    
+      #menuToggle input:checked~ul {
+        transform: none;
+      }
+    
+      a {
+        text-decoration: none;
+        color: #5a9449;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+    
+      .NAvMoisson{
+        font-size: 150%;
+        margin-bottom: 20%;
+      }
+    
+      .NavAjouter{
+        font-size: 100%;
+        margin-bottom: 0px;
+      }
+    
+      .NavComparer{
+        font-size: 100%;
+        margin-top: 0%;
+        margin-bottom: 20%;
+      }
+    
+      .NavCompAgri{
+        background-color: #5a9449;
+        color: white;
+        text-align: center;
+      }
+    
+      .Live {
+        color: #f37f2b;
+        display: inline;
+      }
+
       /*Formulaire*/
   .Formulaire {
     background-color: #ececec;
@@ -126,6 +254,7 @@ The container */
     height: 0;
     width: 0;
   }
+
   /* Create a custom checkbox */
   .checkmark {
     position: absolute;
@@ -172,6 +301,129 @@ The container */
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
+
+    .navigation {
+        padding-bottom: 2%;
+        padding-right: auto;
+        background-color: #5a9449;
+        position: fixed;
+        z-index: 4;
+      }
+      a {
+        text-decoration: none;
+        color: #5a9449;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      a:hover {
+        color: #e9b537;
+      }
+    
+      .NAvMoisson{
+        font-size: 150%;
+        margin-bottom: 20%;
+      }
+    
+      .NavAjouter{
+        font-size: 100%;
+        margin-bottom: 0px;
+      }
+    
+      .NavComparer{
+        font-size: 100%;
+        margin-top: 0%;
+        margin-bottom: 20%;
+      }
+    
+      .NavCompAgri{
+        background-color: #5a9449;
+        color: white;
+        text-align: center;
+      }
+    
+      #menuToggle {
+        display: block;
+        position: relative;
+        top: 6px;
+        left: auto;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+      #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+      }
+    
+      #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: white;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+      }
+      #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+      }
+      #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+    
+      #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #5a9449;
+      }
+    
+      #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+    
+      #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+      }
+    
+      #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0px 0px -65px;
+        padding: 60px;
+        padding-top: 200px;
+        padding-bottom: 600px;
+        background: white;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+      }
+      #menu li {
+        padding: 10px 0;
+        font-size: 15px;
+      }
+    
+      #menuToggle input:checked~ul {
+        transform: none;
+      }
+      .Live {
+        color: #f37f2b;
+        display: inline;
+      }
+
       /*Formulaire*/
   .Formulaire {
     background-color: #ececec;
@@ -354,6 +606,130 @@ The container */
 }
 
 @media (min-width: 1281px) {
+
+    .navigation {
+        padding-bottom: 2%;
+        padding-right: auto;
+        background-color: #5a9449;
+        position: fixed;
+        z-index: 4;
+      }
+      a {
+        text-decoration: none;
+        color: #5a9449;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      a:hover {
+        color: #e9b537;
+      }
+    
+      .NAvMoisson{
+        font-size: 150%;
+        margin-bottom: 20%;
+      }
+    
+      .NavAjouter{
+        font-size: 100%;
+        margin-bottom: 0px;
+      }
+    
+      .NavComparer{
+        font-size: 100%;
+        margin-top: 0%;
+        margin-bottom: 20%;
+      }
+    
+      .NavCompAgri{
+        background-color: #5a9449;
+        color: white;
+        text-align: center;
+      }
+      #menuToggle {
+        display: block;
+        position: relative;
+        top: 6px;
+        left: auto;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+      #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+      }
+
+      #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #5a9449;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+      }
+      #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+      }
+      #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+
+      #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: white;
+      }
+
+      #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+
+      #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+      }
+
+      #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0px 0px -65px;
+        padding: 60px;
+        padding-top: 200px;
+        padding-bottom: 350px;
+        background: white;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+      }
+
+      #menu li {
+        padding: 10px 0;
+        font-size: 15px;
+      }
+
+      #menuToggle input:checked~ul {
+        transform: none;
+      }
+      .Live {
+        color: #f37f2b;
+        display: inline;
+      }
+
       /*Formulaire*/
   .Formulaire {
     background-color: #ececec;
