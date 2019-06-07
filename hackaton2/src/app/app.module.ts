@@ -4,11 +4,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ComparatorComponent } from './comparator/comparator.component';
+import { MapComponent } from './map/map.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ComparatorComponent
+    MapComponent
+
   ],
   imports: [
     BrowserModule,
